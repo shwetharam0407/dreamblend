@@ -1,0 +1,688 @@
+{
+  "paper": "https://arxiv.org/abs/2411.19390",
+  "note": "Images reproduced from the paper for its project website. Original rights and permissions apply.",
+  "images": [
+    {
+      "file": "assets/backpack_input/00.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_input/00.jpg"
+    },
+    {
+      "file": "assets/backpack_input/02.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_input/02.jpg"
+    },
+    {
+      "file": "assets/backpack_input/03.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_input/03.jpg"
+    },
+    {
+      "file": "assets/backpack_input/05.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_input/05.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-100/synthetic_image_0.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-100/synthetic_image_0.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-100/synthetic_image_4.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-100/synthetic_image_4.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-1000/synthetic_image_2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-1000/synthetic_image_2.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-1000/synthetic_image_8.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-1000/synthetic_image_8.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-125/synthetic_image_0.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-125/synthetic_image_0.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-125/synthetic_image_9.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-125/synthetic_image_9.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-150/synthetic_image_1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-150/synthetic_image_1.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-150/synthetic_image_6.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-150/synthetic_image_6.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-175/synthetic_image_0.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-175/synthetic_image_0.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-175/synthetic_image_9.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-175/synthetic_image_9.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-25/synthetic_image_1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-25/synthetic_image_1.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-25/synthetic_image_3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-25/synthetic_image_3.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-5/synthetic_image_1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-5/synthetic_image_1.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-5/synthetic_image_9.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-5/synthetic_image_9.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-50/synthetic_image_3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-50/synthetic_image_3.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-50/synthetic_image_9.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-50/synthetic_image_9.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-75/synthetic_image_0.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-75/synthetic_image_0.jpg"
+    },
+    {
+      "file": "assets/backpack_overfitting/checkpoint-75/synthetic_image_8.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/backpack_overfitting/checkpoint-75/synthetic_image_8.jpg"
+    },
+    {
+      "file": "assets/candle_input/00.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/candle_input/00.jpg"
+    },
+    {
+      "file": "assets/candle_input/03.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/candle_input/03.jpg"
+    },
+    {
+      "file": "assets/candle_input/04.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/candle_input/04.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/cd1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/cd1.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/cd2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/cd2.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/cd3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/cd3.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/db1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/db1.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/db2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/db2.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/db3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/db3.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/ours1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/ours1.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/ours2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/ours2.jpg"
+    },
+    {
+      "file": "assets/comparisons/backpack/ours3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/backpack/ours3.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/cd1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/cd1.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/cd2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/cd2.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/cd3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/cd3.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/db1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/db1.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/db2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/db2.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/db3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/db3.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/ours1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/ours1.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/ours2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/ours2.jpg"
+    },
+    {
+      "file": "assets/comparisons/candle/ours3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/candle/ours3.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/cd1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/cd1.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/cd2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/cd2.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/cd3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/cd3.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/db1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/db1.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/db2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/db2.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/db3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/db3.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/ours1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/ours1.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/ours2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/ours2.jpg"
+    },
+    {
+      "file": "assets/comparisons/grey_sloth_plushie/ours3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/comparisons/grey_sloth_plushie/ours3.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in1.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in2.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in3.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in4.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in4.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in5.jpeg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in5.jpeg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in6.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in6.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in7.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in7.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/in8.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/in8.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours1.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours2.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours3.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours4.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours4.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours5.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours5.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours6.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours6.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours7.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours7.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/ours8.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/ours8.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over1.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over2.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over3.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over4.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over4.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over5.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over5.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over6.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over6.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over7.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over7.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/over8.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/over8.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under1.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under2.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under3.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under3.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under4.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under4.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under5.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under5.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under6.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under6.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under7.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under7.jpg"
+    },
+    {
+      "file": "assets/cross_attention_guided_image_synthesis/under8.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attention_guided_image_synthesis/under8.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/003.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/003.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/006.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/006.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/008.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/008.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/003.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/003.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/006.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/006.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/008.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/008.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/003.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/003.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/006.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/006.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/008.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/008.jpg"
+    },
+    {
+      "file": "assets/sloth_input/00.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/sloth_input/00.jpg"
+    },
+    {
+      "file": "assets/sloth_input/02.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/sloth_input/02.jpg"
+    },
+    {
+      "file": "assets/sloth_input/04.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/sloth_input/04.jpg"
+    },
+    {
+      "file": "assets/cd_results/multi_concept/input1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/multi_concept/input1.jpg"
+    },
+    {
+      "file": "assets/cd_results/multi_concept/input2.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/multi_concept/input2.jpg"
+    },
+    {
+      "file": "assets/cd_results/multi_concept/ours.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/multi_concept/ours.jpg"
+    },
+    {
+      "file": "assets/cd_results/multi_concept/overfit.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/multi_concept/overfit.jpg"
+    },
+    {
+      "file": "assets/cd_results/multi_concept/underfit.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/multi_concept/underfit.jpg"
+    },
+    {
+      "file": "assets/cd_results/single_concept/ours.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/single_concept/ours.jpg"
+    },
+    {
+      "file": "assets/cd_results/single_concept/overfit.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/single_concept/overfit.jpg"
+    },
+    {
+      "file": "assets/cd_results/single_concept/underfit.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cd_results/single_concept/underfit.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/002.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/002.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/003.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/003.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/006.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/006.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/007.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/007.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/008.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/008.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/result.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000/result.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/002.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/002.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/003.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/003.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/006.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/006.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/007.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/007.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/008.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/008.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/result.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_1000_with_attn_guidance/result.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/002.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/002.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/007.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/007.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/result.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250/result.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/002.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/002.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/007.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/007.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/result.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_250_with_attn_guidance/result.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/002.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/002.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/007.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/007.jpg"
+    },
+    {
+      "file": "assets/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/result.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/cross_attn_maps_crop/backpack/attention_synthetic_image_2_ckpt_5/result.jpg"
+    },
+    {
+      "file": "assets/failure_cases/wolf_plushie/input.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/failure_cases/wolf_plushie/input.jpg"
+    },
+    {
+      "file": "assets/failure_cases/wolf_plushie/ours.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/failure_cases/wolf_plushie/ours.jpg"
+    },
+    {
+      "file": "assets/failure_cases/wolf_plushie/overfit.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/failure_cases/wolf_plushie/overfit.jpg"
+    },
+    {
+      "file": "assets/failure_cases/wolf_plushie/underfit.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/failure_cases/wolf_plushie/underfit.jpg"
+    },
+    {
+      "file": "assets/operating_points/bear_plushie_hull_clipi_clipt_avg.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/operating_points/bear_plushie_hull_clipi_clipt_avg.jpg"
+    },
+    {
+      "file": "assets/operating_points/candle_hull_clipi_clipt_avg.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/operating_points/candle_hull_clipi_clipt_avg.jpg"
+    },
+    {
+      "file": "assets/real/03.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/real/03.jpg"
+    },
+    {
+      "file": "assets/real/cat02.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/real/cat02.jpg"
+    },
+    {
+      "file": "assets/real/edited.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/real/edited.jpg"
+    },
+    {
+      "file": "assets/sdxl_under_over/in1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/sdxl_under_over/in1.jpg"
+    },
+    {
+      "file": "assets/sdxl_under_over/ours1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/sdxl_under_over/ours1.jpg"
+    },
+    {
+      "file": "assets/sdxl_under_over/over1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/sdxl_under_over/over1.jpg"
+    },
+    {
+      "file": "assets/sdxl_under_over/under1.jpg",
+      "source": "https://arxiv.org/html/2411.19390v1/images/sdxl_under_over/under1.jpg"
+    },
+    {
+      "file": "assets/teaser-original.png",
+      "source": "https://arxiv.org/html/2411.19390v1/fig1.png"
+    },
+    {
+      "file": "assets/teaser/input1.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 140,
+      "width": 307,
+      "height": 307,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/input2.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 139,
+      "width": 472,
+      "height": 472,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/input3.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 137,
+      "width": 286,
+      "height": 286,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/input4.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 138,
+      "width": 452,
+      "height": 452,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/input5.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 136,
+      "width": 282,
+      "height": 282,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/early1.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 141,
+      "width": 512,
+      "height": 512,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/early2.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 144,
+      "width": 192,
+      "height": 192,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/early3.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 147,
+      "width": 192,
+      "height": 194,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/late1.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 143,
+      "width": 192,
+      "height": 192,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/late2.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 146,
+      "width": 192,
+      "height": 192,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/late3.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 149,
+      "width": 192,
+      "height": 192,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/ours1.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 134,
+      "width": 512,
+      "height": 512,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/ours2.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 135,
+      "width": 512,
+      "height": 512,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    },
+    {
+      "file": "assets/teaser/ours3.png",
+      "source": "https://arxiv.org/pdf/2411.19390",
+      "pdf_page": 1,
+      "pdf_object": 133,
+      "width": 512,
+      "height": 512,
+      "note": "Native embedded Figure 1 image extracted losslessly with pdfimages -png; no resizing or enhancement."
+    }
+  ]
+}

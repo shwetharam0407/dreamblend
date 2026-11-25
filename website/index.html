@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://shwetharam0407.github.io/dreamblend/">
+  <meta name="description" content="DreamBlend (WACV 2025) improves personalized text-to-image diffusion with cross-attention guidance. Explore the method, visual results, paper, and talk.">
+  <meta property="og:title" content="DreamBlend: Personalized Text-to-Image Diffusion | WACV 2025">
+  <meta property="og:description" content="DreamBlend (WACV 2025) improves personalized text-to-image diffusion with cross-attention guidance. Explore the method, visual results, paper, and talk.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shwetharam0407.github.io/dreamblend/">
+  <meta property="og:image" content="https://shwetharam0407.github.io/dreamblend/assets/teaser-original.png">
+  <meta property="og:image:alt" content="DreamBlend combines prompt-aligned layouts from early checkpoints with subject fidelity from later checkpoints.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://shwetharam0407.github.io/dreamblend/assets/teaser-original.png">
+  <meta name="twitter:title" content="DreamBlend: Personalized Text-to-Image Diffusion | WACV 2025">
+  <meta name="twitter:description" content="DreamBlend (WACV 2025) improves personalized text-to-image diffusion with cross-attention guidance. Explore the method, visual results, paper, and talk.">
+  <title>DreamBlend: Personalized Text-to-Image Diffusion | WACV 2025</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "url": "https://shwetharam0407.github.io/dreamblend/",
+    "name": "DreamBlend: Advancing Personalized Fine-tuning of Text-to-Image Diffusion Models",
+    "description": "Project website for DreamBlend, a WACV 2025 method for personalized text-to-image diffusion using cross-attention guidance.",
+    "inLanguage": "en",
+    "about": {
+      "@type": "ScholarlyArticle",
+      "name": "DreamBlend: Advancing Personalized Fine-Tuning of Text-to-Image Diffusion Models",
+      "author": [
+        {"@type": "Person", "name": "Shwetha Ram"},
+        {"@type": "Person", "name": "Tal Neiman"},
+        {"@type": "Person", "name": "Qianli Feng"},
+        {"@type": "Person", "name": "Andrew Stuart"},
+        {"@type": "Person", "name": "Son Tran"},
+        {"@type": "Person", "name": "Trishul Chilimbi"}
+      ],
+      "url": "https://openaccess.thecvf.com/content/WACV2025/html/Ram_DreamBlend_Advancing_Personalized_Fine-Tuning_of_Text-to-Image_Diffusion_Models_WACV_2025_paper.html",
+      "sameAs": "https://arxiv.org/abs/2411.19390",
+      "isPartOf": {
+        "@type": "CreativeWork",
+        "name": "Proceedings of the Winter Conference on Applications of Computer Vision (WACV), 2025"
+      }
+    }
+  }
+  </script>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main">
+    <header class="paper-header page-width" id="top">
+      <h1><strong>DreamBlend:</strong> Advancing Personalized Fine-tuning<br class="desktop-break"> of Text-to-Image Diffusion Models</h1>
+      <div class="authors" aria-label="Authors"><span>Shwetha Ram</span><span>Tal Neiman</span><span>Qianli Feng</span><span>Andrew Stuart</span><span>Son Tran</span><span>Trishul Chilimbi</span></div>
+      <p class="venue">WACV 2025</p>
+      <div class="resource-links">
+        <a href="https://arxiv.org/abs/2411.19390" target="_blank" rel="noopener noreferrer">[Paper]</a>
+        <a href="https://arxiv.org/pdf/2411.19390" target="_blank" rel="noopener noreferrer">[PDF]</a>
+        <a href="https://www.youtube.com/watch?v=uiS9ijiUsK8" target="_blank" rel="noopener noreferrer">[Talk]</a>
+        <a href="#citation">[BibTeX]</a>
+      </div>
+    </header>
+
+    <section class="page-width teaser-section" aria-label="DreamBlend overview">
+      <figure id="teaser" class="teaser" data-stage="5" data-playing="false">
+        <div class="story-heading"><span id="story-counter">5 / 5</span><h3 id="story-title">Preserve the layout. Recover the subject.</h3><span class="story-loop-label">A visual explanation</span></div>
+        <div class="story-viewport">
+          <div class="story-context">
+            <div class="story-reference"><span>Input subject</span><div>
+              <img src="assets/teaser/input1.png" width="96" height="96" alt="Teddy training image 1">
+              <img src="assets/teaser/input2.png" width="96" height="96" alt="Teddy training image 2">
+              <img src="assets/teaser/input3.png" width="96" height="96" alt="Teddy training image 3">
+              <img src="assets/teaser/input4.png" width="96" height="96" alt="Teddy training image 4">
+              <img src="assets/teaser/input5.png" width="96" height="96" alt="Teddy training image 5">
+            </div></div>
+            <p><span>Same prompt throughout</span>“a <var>teddy</var><sup>*</sup> with a blue house in the background”</p>
+          </div>
+
+          <div class="story-scene story-input-scene" data-story-scene="1" hidden>
+            <p class="story-kicker">A FEW PHOTOS OF YOUR SUBJECT</p>
+            <div class="story-training-images">
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/input1.png" width="96" height="96" alt="Figure 1: teddy training image 1"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/input2.png" width="96" height="96" alt="Figure 1: teddy training image 2"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/input3.png" width="96" height="96" alt="Figure 1: teddy training image 3"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/input4.png" width="96" height="96" alt="Figure 1: teddy training image 4"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/input5.png" width="96" height="96" alt="Figure 1: teddy training image 5"></button>
+            </div>
+            <span class="story-plus" aria-hidden="true">+</span>
+            <p class="story-kicker">A NEW TEXT PROMPT</p>
+            <p class="story-input-prompt">“a <var>teddy</var><sup>*</sup> with a <strong>blue house</strong><br>in the background”</p>
+            <p class="story-goal">The goal: this teddy, in a new scene.</p>
+          </div>
+
+          <div class="story-scene" data-story-scene="2" hidden>
+            <p class="story-kicker early-color">UNDERFIT CHECKPOINTS · EARLY IN FINE-TUNING</p>
+            <div class="story-samples">
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/early1.png" width="161" height="160" alt="Figure 1 underfit sample 1; prompt: a teddy* with a blue house in the background"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/early2.png" width="161" height="160" alt="Figure 1 underfit sample 2; prompt: a teddy* with a blue house in the background"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/early3.png" width="159" height="160" alt="Figure 1 underfit sample 3; prompt: a teddy* with a blue house in the background"></button>
+            </div>
+            <p class="story-positive">✓ Blue houses and diverse, prompt-aligned scenes.</p>
+            <p class="story-problem"><span aria-hidden="true">✕</span> But these teddies do not faithfully match the input subject.</p>
+          </div>
+
+          <div class="story-scene" data-story-scene="3" hidden>
+            <p class="story-kicker late-color">OVERFIT CHECKPOINTS · LATER IN FINE-TUNING</p>
+            <div class="story-samples">
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/late1.png" width="160" height="160" alt="Figure 1 overfit sample 1; the blue-house prompt gives a training-like scene"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/late2.png" width="160" height="160" alt="Figure 1 overfit sample 2; the blue-house prompt gives a training-like scene"></button>
+              <button type="button" class="image-button" data-zoom><img src="assets/teaser/late3.png" width="160" height="160" alt="Figure 1 overfit sample 3; the blue-house prompt gives a training-like scene"></button>
+            </div>
+            <p class="story-positive">✓ The model has learned the subject’s appearance.</p>
+            <p class="story-problem"><span aria-hidden="true">✕</span> The blue house is missing. Scenes resemble the training images.</p>
+          </div>
+
+          <div class="story-scene" data-story-scene="4" hidden>
+            <div class="story-guidance">
+              <div class="guidance-reference"><h4>Underfit reference</h4><button type="button" class="image-button" data-zoom><img src="assets/teaser/early1.png" width="161" height="160" alt="Figure 1 underfit sample 1 supplies the prompt-aligned reference layout"></button><p class="early-color">Prompt-aligned layout</p></div>
+              <div class="guidance-connection"><p>Cross-attention<br>guidance</p><svg viewBox="0 0 170 30" aria-hidden="true"><path class="guidance-flow" d="M3 15H156"/><path d="m148 7 10 8-10 8"/></svg><span class="guidance-identity-arrow" aria-hidden="true">↑</span><img src="assets/teaser/late1.png" width="160" height="160" alt="Figure 1 later-checkpoint sample illustrates learned subject appearance"><span class="late-color">Subject knowledge<br>from the later checkpoint</span></div>
+              <div class="guidance-result"><h4>DreamBlend</h4><button type="button" class="image-button" data-zoom><img src="assets/teaser/ours1.png" width="223" height="223" alt="Figure 1 DreamBlend sample 1 retains the early reference scene layout while improving subject fidelity"></button><p class="ours-color">Layout + subject fidelity</p></div>
+            </div>
+            <p class="guidance-detail">Save the early model’s attention maps; use them to guide the later model’s latent updates.</p>
+          </div>
+
+          <div class="story-scene story-result-scene" data-story-scene="5">
+            <div class="layout-comparisons">
+              <div class="layout-pair"><span class="layout-label">Layout 1</span><span class="layout-source-label">Underfit reference</span><button type="button" class="image-button" data-zoom><img src="assets/teaser/early1.png" width="161" height="160" alt="Layout 1, underfit reference: teddy with a blue house behind it"></button><span class="layout-arrow">↓ <span>layout retained</span></span><button type="button" class="image-button" data-zoom><img src="assets/teaser/ours1.png" width="223" height="223" alt="Layout 1, DreamBlend: improved teddy identity with the blue-house composition retained"></button><span class="layout-result-label">DreamBlend</span></div>
+              <div class="layout-pair"><span class="layout-label">Layout 2</span><span class="layout-source-label">Underfit reference</span><button type="button" class="image-button" data-zoom><img src="assets/teaser/early2.png" width="161" height="160" alt="Layout 2, underfit reference: teddy on grass with a blue house in the background"></button><span class="layout-arrow">↓ <span>layout retained</span></span><button type="button" class="image-button" data-zoom><img src="assets/teaser/ours2.png" width="224" height="223" alt="Layout 2, DreamBlend: improved teddy identity in the reference lawn-and-house composition"></button><span class="layout-result-label">DreamBlend</span></div>
+              <div class="layout-pair"><span class="layout-label">Layout 3</span><span class="layout-source-label">Underfit reference</span><button type="button" class="image-button" data-zoom><img src="assets/teaser/early3.png" width="159" height="160" alt="Layout 3, underfit reference: standing teddy with a blue house and trees"></button><span class="layout-arrow">↓ <span>layout retained</span></span><button type="button" class="image-button" data-zoom><img src="assets/teaser/ours3.png" width="224" height="224" alt="Layout 3, DreamBlend: improved teddy identity with the standing pose and house-and-trees composition retained"></button><span class="layout-result-label">DreamBlend</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="story-progress" aria-hidden="true"><span></span></div>
+        <div class="story-controls">
+          <div class="explanation-steps" role="group" aria-label="Animation scene">
+            <button type="button" data-teaser-step="1" aria-pressed="false">1. Inputs</button><button type="button" data-teaser-step="2" aria-pressed="false">2. Underfit</button><button type="button" data-teaser-step="3" aria-pressed="false">3. Overfit</button><button type="button" data-teaser-step="4" aria-pressed="false">4. Guidance</button><button type="button" data-teaser-step="5" aria-pressed="true" class="selected">5. Result</button>
+          </div>
+          <div class="story-playback"><button type="button" id="animate-teaser" class="text-button" aria-pressed="false">▶ Play</button><button type="button" id="replay-teaser" class="text-button">↻ Replay</button></div>
+        </div>
+        <p id="teaser-explanation" class="teaser-explanation" aria-live="off">Compare each column: the reference scene composition is retained while subject fidelity improves. Layout preservation is approximate, not pixel-exact.</p>
+      </figure>
+    </section>
+
+    <section class="paper-section page-width" id="abstract">
+      <h2>Abstract</h2>
+      <p class="abstract-text">Given a small number of images of a subject, personalized image generation techniques can fine-tune large pre-trained text-to-image diffusion models to generate images of the subject in novel contexts, conditioned on text prompts. In doing so, a trade-off is made between prompt fidelity, subject fidelity and diversity. As the pre-trained model is fine-tuned, earlier checkpoints synthesize images with low subject fidelity but high prompt fidelity and diversity. In contrast, later checkpoints generate images with low prompt fidelity and diversity but high subject fidelity. This inherent trade-off limits the prompt fidelity, subject fidelity and diversity of generated images. In this work, we propose <strong>DreamBlend</strong> to combine the prompt fidelity from earlier checkpoints and the subject fidelity from later checkpoints during inference. We perform a cross attention guided image synthesis from a later checkpoint, guided by an image generated by an earlier checkpoint, for the same prompt. This enables generation of images with better subject fidelity, prompt fidelity and diversity on challenging prompts, outperforming state-of-the-art fine-tuning methods.</p>
+    </section>
+
+    <section class="paper-section page-width" id="tradeoff">
+      <h2>The Fine-tuning Trade-off</h2>
+      <p>Early in fine-tuning, the model can follow the text prompt but has not yet learned the subject faithfully. Later checkpoints learn the subject’s appearance, but can overfit its training poses and environments. The following generations show this progression for a single subject.</p>
+      <figure class="checkpoint-figure">
+        <div class="checkpoint-reference"><span class="figure-label">Input subject</span><img src="assets/backpack_input/00.jpg" alt="Input photograph of the personalized backpack" width="512" height="512" loading="lazy"><p>Prompt: “a <var>backpack</var><sup>*</sup> on a cobblestone street”</p></div>
+        <div class="checkpoint-top"><span>Fine-tuning steps</span><output id="step-output" for="checkpoint-range">5</output></div>
+        <div class="checkpoint-images"><button type="button" class="image-button" data-zoom><img id="checkpoint-image-a" src="assets/backpack_overfitting/checkpoint-5/synthetic_image_1.jpg" width="512" height="512" alt="Backpack generation at 5 training steps, sample 1" loading="lazy"></button><button type="button" class="image-button" data-zoom><img id="checkpoint-image-b" src="assets/backpack_overfitting/checkpoint-5/synthetic_image_9.jpg" width="512" height="512" alt="Backpack generation at 5 training steps, sample 2" loading="lazy"></button></div>
+        <div class="scrubber"><button type="button" id="play-checkpoints" aria-label="Play checkpoint progression" aria-pressed="false">▶</button><div class="range-wrapper"><label class="sr-only" for="checkpoint-range">Fine-tuning checkpoint</label><input id="checkpoint-range" type="range" min="0" max="8" value="0" step="1" aria-valuetext="5 training steps"><div class="range-labels"><span>5</span><span>25</span><span>50</span><span>75</span><span>100</span><span>125</span><span>150</span><span>175</span><span>1,000</span></div></div></div>
+        <p id="checkpoint-description" class="checkpoint-description" aria-live="polite">5 steps: high prompt fidelity and diversity, but low subject fidelity.</p>
+        <figcaption>Images generated as fine-tuning progresses from 5 to 1,000 steps. Early checkpoints follow the prompt and produce diverse images but lack subject fidelity; later checkpoints capture the subject but lose prompt fidelity and diversity, eventually reproducing the training images.</figcaption>
+      </figure>
+    </section>
+
+    <section class="paper-section page-width" id="method">
+      <h2>Method: Cross-attention Guided Image Synthesis</h2>
+      <p>DreamBlend combines two checkpoints from the same fine-tuning run: an early <strong>guidance model</strong> that follows the prompt and a later <strong>edit model</strong> that has learned the subject’s appearance. Cross-attention guidance helps the edit model retain the guidance model’s scene layout while improving subject fidelity.</p>
+      <div class="method-steps">
+        <div><h3>1. Generate a reference</h3><p>Use the guidance model to generate an image for the prompt. Save its cross-attention maps, which show where each text token attends as the image takes shape.</p></div>
+        <div><h3>2. Guide the edit model</h3><p>Start the edit model from the same random noise and prompt. At each generation step, adjust its noisy image representation so its attention maps more closely match the reference maps.</p></div>
+        <div><h3>3. Produce the final image</h3><p>The edit model progressively denoises the guided representation, combining the reference layout with its learned subject appearance. Both models’ weights remain fixed.</p></div>
+      </div>
+      <p class="figure-caption">See <a href="https://arxiv.org/html/2411.19390v1#alg1" target="_blank" rel="noopener noreferrer">Algorithm 1</a> for the full procedure.</p>
+
+      <h3 class="subsection-title">How cross-attention guidance helps</h3>
+      <p>The 5-step guidance model follows the prompt but has not learned the backpack’s appearance. The 250-step edit model captures the subject but loses the cobblestone street. Cross-attention guidance (CAG) restores the prompt-aligned layout while retaining subject identity. All three generations use the same starting noise, prompt, classifier-free guidance, and 50 DDIM sampling steps.</p>
+      <figure class="attention-figure">
+        <p class="figure-prompt">Literal prompt: <code>“a sks backpack on a cobblestone street”</code></p>
+        <div class="token-toolbar"><span>Inspect token:</span><div role="group" aria-label="Attention map token"><button type="button" class="token-button" data-token="002" aria-pressed="false">sks</button><button type="button" class="token-button" data-token="003" aria-pressed="false">backpack</button><button type="button" class="token-button" data-token="006" aria-pressed="false">cobble</button><button type="button" class="token-button" data-token="007" aria-pressed="false">stone</button><button type="button" class="token-button selected" data-token="008" aria-pressed="true">street</button></div></div>
+        <p class="scroll-hint">Swipe horizontally to compare all three checkpoint conditions.</p>
+        <div class="figure-scroll"><div class="attention-grid" id="attention-grid"></div></div>
+        <figcaption><strong>Generated images (top) and token cross-attention maps (bottom).</strong> The 5-step reference guides attention in the 250-step edit model, restoring the cobblestone street. Select a token to compare its attention across the three conditions; “sks” identifies the personalized subject.</figcaption>
+      </figure>
+    </section>
+
+    <section class="paper-section page-width" id="results">
+      <h2>More Results</h2>
+      <p>Across different subjects and prompts, DreamBlend preserves the layout of an underfit reference image while incorporating the subject identity learned by the later checkpoint. Choose a scene to compare the input subject, the two checkpoints, and the guided result.</p>
+      <figure class="results-figure">
+        <div class="scene-options" role="group" aria-label="Choose a scene">
+          <button type="button" class="scene-button selected" data-scene="0" aria-pressed="true">Bowl / beach</button><button type="button" class="scene-button" data-scene="1" aria-pressed="false">Cat / mountain</button><button type="button" class="scene-button" data-scene="2" aria-pressed="false">Candle / sunflowers</button><button type="button" class="scene-button" data-scene="3" aria-pressed="false">Toy / snow</button><button type="button" class="scene-button" data-scene="4" aria-pressed="false">Toy / blue house</button><button type="button" class="scene-button" data-scene="5" aria-pressed="false">Cat / police outfit</button><button type="button" class="scene-button" data-scene="6" aria-pressed="false">Teddy / wheat field</button><button type="button" class="scene-button" data-scene="7" aria-pressed="false">Bowl / pink fabric</button>
+        </div>
+        <div class="comparison-grid" id="comparison-grid">
+          <div><h4>Input subject</h4><button type="button" class="image-button" data-zoom><img id="scene-input" src="assets/cross_attention_guided_image_synthesis/in1.jpg" alt="Input subject: personalized bowl" width="512" height="512" loading="lazy"></button></div>
+          <div><h4>Underfit <span>(guidance)</span></h4><button type="button" class="image-button" data-zoom><img id="scene-under" src="assets/cross_attention_guided_image_synthesis/under1.jpg" alt="Underfit checkpoint: a bowl* on the beach" width="512" height="512" loading="lazy"></button></div>
+          <div><h4>Overfit <span>(edit)</span></h4><button type="button" class="image-button" data-zoom><img id="scene-over" src="assets/cross_attention_guided_image_synthesis/over1.jpg" alt="Overfit checkpoint: a bowl* on the beach" width="512" height="512" loading="lazy"></button></div>
+          <div><h4>DreamBlend <span>(ours)</span></h4><button type="button" class="image-button" data-zoom><img id="scene-ours" src="assets/cross_attention_guided_image_synthesis/ours1.jpg" alt="DreamBlend: a bowl* on the beach" width="512" height="512" loading="lazy"></button></div>
+        </div>
+        <p class="figure-prompt" id="scene-prompt" aria-live="polite">Prompt: “a bowl* on the beach”</p>
+        <figcaption>DreamBlend combines the underfit checkpoint’s prompt-aligned layout with the overfit checkpoint’s subject identity. All generated images in each comparison use the displayed prompt.</figcaption>
+      </figure>
+
+    </section>
+
+    <section class="paper-section page-width" id="generalization">
+      <h2>Generalization</h2>
+      <p>The approach also applies to other backbones and fine-tuning methods with cross-attention, to multiple personalized concepts, and to personalized editing of real images.</p>
+      <div class="scene-options generalization-options" role="group" aria-label="Choose a generalization example">
+        <button type="button" class="scene-button selected" data-generalization="sdxl" aria-controls="generalization-sdxl" aria-pressed="true">SDXL + LoRA</button>
+        <button type="button" class="scene-button" data-generalization="custom" aria-controls="generalization-custom" aria-pressed="false">SD 1.5 + Custom Diffusion</button>
+        <button type="button" class="scene-button" data-generalization="multi" aria-controls="generalization-multi" aria-pressed="false">Multiple concepts</button>
+        <button type="button" class="scene-button" data-generalization="editing" aria-controls="generalization-editing" aria-pressed="false">Real-image editing</button>
+      </div>
+      <figure class="generalization-figure" id="generalization-sdxl" data-generalization-panel="sdxl">
+        <h3>SDXL + LoRA</h3>
+        <div class="comparison-grid">
+          <div><h4>Input subject</h4><button type="button" class="image-button" data-zoom><img src="assets/sdxl_under_over/in1.jpg" alt="SDXL LoRA input vase" width="512" height="512" loading="lazy"></button></div>
+          <div><h4>Underfit</h4><button type="button" class="image-button" data-zoom><img src="assets/sdxl_under_over/under1.jpg" alt="Underfit SDXL LoRA: a vase* on top of a dirt road" width="512" height="512" loading="lazy"></button></div>
+          <div><h4>Overfit</h4><button type="button" class="image-button" data-zoom><img src="assets/sdxl_under_over/over1.jpg" alt="Overfit SDXL LoRA: a vase* on top of a dirt road" width="512" height="512" loading="lazy"></button></div>
+          <div><h4>DreamBlend</h4><button type="button" class="image-button" data-zoom><img src="assets/sdxl_under_over/ours1.jpg" alt="DreamBlend SDXL LoRA: a vase* on top of a dirt road" width="512" height="512" loading="lazy"></button></div>
+        </div>
+        <figcaption class="figure-prompt">Prompt: “a <var>vase</var><sup>*</sup> on top of a dirt road”</figcaption>
+      </figure>
+        <figure class="generalization-figure" id="generalization-custom" data-generalization-panel="custom">
+          <h3>SD 1.5 + Custom Diffusion</h3>
+          <div class="comparison-grid">
+            <div><h4>Input subject</h4><button type="button" class="image-button" data-zoom><img src="assets/candle_input/00.jpg" alt="Custom Diffusion input candle" width="512" height="512" loading="lazy"></button></div>
+            <div><h4>Underfit</h4><button type="button" class="image-button" data-zoom><img src="assets/cd_results/single_concept/underfit.jpg" alt="Underfit Custom Diffusion: a candle* on a cobblestone street" width="512" height="512" loading="lazy"></button></div>
+            <div><h4>Overfit</h4><button type="button" class="image-button" data-zoom><img src="assets/cd_results/single_concept/overfit.jpg" alt="Overfit Custom Diffusion: a candle* on a cobblestone street" width="512" height="512" loading="lazy"></button></div>
+            <div><h4>DreamBlend</h4><button type="button" class="image-button" data-zoom><img src="assets/cd_results/single_concept/ours.jpg" alt="DreamBlend with Custom Diffusion: a candle* on a cobblestone street" width="512" height="512" loading="lazy"></button></div>
+          </div>
+          <figcaption class="figure-prompt">Prompt: “a <var>candle</var><sup>*</sup> on a cobblestone street”</figcaption>
+        </figure>
+        <figure class="generalization-figure" id="generalization-multi" data-generalization-panel="multi">
+          <h3>SD 1.4 + Custom Diffusion · Two personalized concepts</h3>
+          <div class="comparison-grid">
+            <div><h4>Input subjects</h4><div class="paired-inputs"><button type="button" class="image-button" data-zoom><img src="assets/cd_results/multi_concept/input1.jpg" alt="Personalized dog input" width="512" height="512" loading="lazy"></button><button type="button" class="image-button" data-zoom><img src="assets/cd_results/multi_concept/input2.jpg" alt="Personalized bowl input" width="512" height="512" loading="lazy"></button></div></div>
+            <div><h4>Underfit</h4><button type="button" class="image-button" data-zoom><img src="assets/cd_results/multi_concept/underfit.jpg" alt="Underfit: a dog* with a bowl* on a beach" width="512" height="512" loading="lazy"></button></div>
+            <div><h4>Overfit</h4><button type="button" class="image-button" data-zoom><img src="assets/cd_results/multi_concept/overfit.jpg" alt="Overfit: a dog* with a bowl* on a beach" width="512" height="512" loading="lazy"></button></div>
+            <div><h4>DreamBlend</h4><button type="button" class="image-button" data-zoom><img src="assets/cd_results/multi_concept/ours.jpg" alt="DreamBlend: a dog* with a bowl* on a beach" width="512" height="512" loading="lazy"></button></div>
+          </div>
+          <figcaption class="figure-prompt">Prompt: “a <var>dog</var><sup>*</sup> with a <var>bowl</var><sup>*</sup> on a beach”</figcaption>
+        </figure>
+        <figure class="generalization-figure" id="generalization-editing" data-generalization-panel="editing">
+          <h3>Personalized editing of a real image</h3>
+          <div class="editing-grid">
+            <div><h4>Personalized subject: <var>cat</var><sup>*</sup></h4><button type="button" class="image-button" data-zoom><img src="assets/real/03.jpg" alt="Input photograph of the personalized cat" width="512" height="512" loading="lazy"></button></div>
+            <div><h4>Real image</h4><button type="button" class="image-button" data-zoom><img src="assets/real/cat02.jpg" alt="Real cat image to be edited" width="512" height="512" loading="lazy"></button></div>
+            <div><h4>Edited image</h4><button type="button" class="image-button" data-zoom><img src="assets/real/edited.jpg" alt="Real image edited to show the personalized cat" width="512" height="512" loading="lazy"></button></div>
+          </div>
+          <figcaption><strong>Personalized edit: cat → <var>cat</var><sup>*</sup>.</strong> DDIM inversion enables editing a real image to depict the personalized cat.</figcaption>
+        </figure>
+    </section>
+
+    <section class="paper-section page-width" id="talk">
+      <h2>Talk</h2>
+      <a class="talk-link" href="https://www.youtube.com/watch?v=uiS9ijiUsK8" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 64 44" aria-hidden="true"><rect width="64" height="44" rx="9" fill="#c4302b"/><path d="m26 12 17 10-17 10z" fill="white"/></svg><span><strong>DreamBlend: Advancing Personalized Fine-tuning<br class="desktop-break"> of Text-to-Image Diffusion Models</strong><span>Watch the talk on YouTube ↗</span></span></a>
+    </section>
+
+    <section class="paper-section page-width" id="citation">
+      <h2>BibTeX</h2>
+      <div class="citation-actions"><span>WACV 2025 citation</span><a href="citation.bib" download>Download .bib</a><button type="button" id="copy-citation">Copy BibTeX</button></div>
+      <pre><code id="bibtex">@InProceedings{Ram_2025_WACV,
+  title={DreamBlend: Advancing Personalized Fine-Tuning of
+         Text-to-Image Diffusion Models},
+  author={Ram, Shwetha and Neiman, Tal and Feng, Qianli and
+          Stuart, Andrew M and Tran, Son and Chilimbi, Trishul A},
+  booktitle={Proceedings of the Winter Conference on Applications of Computer Vision (WACV)},
+  month={February},
+  year={2025},
+  pages={3614--3623},
+  url={https://openaccess.thecvf.com/content/WACV2025/html/Ram_DreamBlend_Advancing_Personalized_Fine-Tuning_of_Text-to-Image_Diffusion_Models_WACV_2025_paper.html}
+}</code></pre>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </section>
+  </main>
+  <footer class="page-width"><p>DreamBlend · WACV 2025</p></footer>
+  <dialog id="image-dialog" aria-label="Enlarged paper image"><button type="button" class="dialog-close" aria-label="Close enlarged image">×</button><img id="dialog-image" alt=""><p id="dialog-caption"></p></dialog>
+  <noscript><p class="noscript-note">JavaScript enables the teaser explanation, checkpoint controls, token maps, and subject selectors. The teaser, abstract, method, main comparison, paper links, and talk link remain available without it.</p></noscript>
+</body>
+</html>
